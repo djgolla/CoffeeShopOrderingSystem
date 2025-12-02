@@ -6,43 +6,45 @@ export default {
     {
       id: 101,
       customer: "Professor Lei",
-      time: "8:32 AM",
+      time: "2025-12-02T08:32:00", // FIXED valid ISO time
       status: "pending",
       total: 12.50,
       items: [
-        { name: "Iced Latte", price: 5.00 },
-        { name: "Blueberry Muffin", price: 3.50 },
-        { name: "Extra Shot", price: 4.00 },
+        { name: "Iced Latte", qty: 1, price: 5.00 },        // added qty
+        { name: "Blueberry Muffin", qty: 1, price: 3.50 }, // added qty
+        { name: "Extra Shot", qty: 1, price: 4.00 },       // added qty
       ],
     },
     {
       id: 102,
       customer: "Daniel Golladay",
-      time: "9:10 AM",
+      time: "2025-12-02T09:10:00",
       status: "preparing",
       total: 7.00,
       items: [
-        { name: "Cappuccino", price: 4.00 },
-        { name: "Chocolate Chip Cookie", price: 3.00 },
+        { name: "Cappuccino", qty: 1, price: 4.00 },
+        { name: "Chocolate Chip Cookie", qty: 1, price: 3.00 },
       ],
     },
     {
       id: 103,
       customer: "Billy Bob",
-      time: "9:42 AM",
+      time: "2025-12-02T09:42:00",
       status: "ready",
       total: 4.50,
-      items: [{ name: "Hot Coffee", price: 4.50 }],
+      items: [
+        { name: "Hot Coffee", qty: 1, price: 4.50 }
+      ],
     },
     {
       id: 104,
       customer: "Joe",
-      time: "10:15 AM",
+      time: "2025-12-02T10:15:00",
       status: "completed",
       total: 9.75,
       items: [
-        { name: "Vanilla Latte", price: 5.75 },
-        { name: "Banana Bread", price: 4.00 },
+        { name: "Vanilla Latte", qty: 1, price: 5.75 },
+        { name: "Banana Bread", qty: 1, price: 4.00 },
       ],
     },
   ],
